@@ -2,17 +2,17 @@ function grade(number) {
     var result;
     if (number >= 80 && number <= 100) {
         result = 'A+';
-    } else if (number >= 70 && number <= 79) {
+    } else if (number >= 70 && number < 80) {
         result = 'A';
-    } else if (number >= 60 && number <= 69) {
+    } else if (number >= 60 && number < 70) {
         result = 'A-';
-    } else if (number >= 50 && number <= 59) {
+    } else if (number >= 50 && number < 60) {
         result = 'B';
-    } else if (number >= 40 && number <= 49) {
+    } else if (number >= 40 && number < 50) {
         result = 'C';
-    } else if (number >= 33 && number <= 39) {
+    } else if (number >= 33 && number < 40) {
         result = 'D';
-    } else if (number >= 0 && number <= 32) {
+    } else if (number >= 0 && number < 33) {
         result = 'F';
     } else {
         return 'It\'s an invalid number'
