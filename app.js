@@ -38,5 +38,10 @@ document.getElementById('action-btn').addEventListener('click', function () {
     document.getElementById('total-marks').innerText = getFinalMarks;
 
     // Caculate Fonal Grade
-    document.getElementById('finalGrade').innerText = grade(getFinalMarks / 3);
+    if (getBanglaNumber < 33 || getEnglishNumber < 33 || getIctNumber < 33) {
+        document.getElementById('finalGrade').innerText = 'F';
+    }
+    else {
+        document.getElementById('finalGrade').innerText = grade(getFinalMarks / 3);
+    }
 })
